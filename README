@@ -1,0 +1,1 @@
+Pystan image based on jupyter notebook image. Mount your code to /home/jovyan/work (-v host-path:/home/jovyan/work).
