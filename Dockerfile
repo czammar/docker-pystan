@@ -15,5 +15,7 @@ USER root
 RUN apt-get update && apt-get install -y software-properties-common
 RUN apt-get -y install build-essential libxml2-dev libcurl4-openssl-dev libssl-dev
 
+RUN pip install OWSLib
+
 USER jovyan
 RUN mkdir .R && echo "CXX14 = g++ -std=c++1y -Wno-unused-variable -Wno-unused-function -Wno-deprecated -Wno-ignored-attributes -fPIC" > .R/Makevars
