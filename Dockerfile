@@ -6,7 +6,9 @@ ENV LC_CTYPE=C.UTF-8
 
 #RUN apt-get -y install graphviz
 RUN pip install --upgrade pip
-RUN pip install --upgrade numpy scikit-learn pystan theano gpflow tensorflow keras boto3 google-cloud google-api-python-client google-auth-httplib2 google-cloud-bigquery[pandas] pyarrow google-cloud-storage graphviz jupyter_http_over_ws OWSLib edward imbalanced-learn zarr netCDF4 xarray dask toolz
+RUN pip install --upgrade numpy scikit-learn pystan theano gpflow tensorflow keras boto3 google-cloud google-api-python-client google-auth-httplib2 google-cloud-bigquery[pandas] pyarrow google-cloud-storage graphviz jupyter_http_over_ws OWSLib edward imbalanced-learn zarr netCDF4 xarray dask toolz geopandas
+
+RUN conda install geoplot -c conda-forge
 
 RUN jupyter serverextension enable --py jupyter_http_over_ws
 
