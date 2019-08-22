@@ -10,6 +10,8 @@ RUN pip install --upgrade numpy scikit-learn pystan theano gpflow tensorflow ker
 
 RUN conda install geoplot -c conda-forge
 
+RUN pip install --upgrade mapclassify
+
 RUN jupyter serverextension enable --py jupyter_http_over_ws
 
 USER root
